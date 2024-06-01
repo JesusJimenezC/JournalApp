@@ -1,57 +1,37 @@
-import { TurnedInNot } from "@mui/icons-material";
-import {
-  Box,
-  Divider,
-  Drawer,
-  Grid,
-  List,
-  ListItem,
-  ListItemButton,
-  ListItemIcon,
-  ListItemText,
-  Toolbar,
-  Typography,
-} from "@mui/material";
-import type { ReactElement } from "react";
+import { Box, Divider, Drawer, List, Toolbar, Typography } from '@mui/material';
+import type { ReactElement } from 'react';
+
+import { useAppSelector } from '../../store';
+import { SidebarItem } from './';
 
 export const Sidebar = ({
   drawerWidth = 240,
 }: {
   drawerWidth: number;
 }): ReactElement => {
-  console.log("Sidebar");
+  const { displayName } = useAppSelector((state) => state.auth);
+  const { notes } = useAppSelector((state) => state.journal);
 
   return (
-    <Box component="nav" sx={{ width: drawerWidth, flexShrink: { sm: 0 } }}>
+    <Box component="nav" sx={{ flexShrink: { sm: 0 }, width: drawerWidth }}>
       <Drawer
         open
         sx={{
-          display: { xs: "block" },
-          "& .MuiDrawer-paper": { boxSizing: "border-box", width: drawerWidth },
+          '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+          'display': { xs: 'block' },
         }}
-        variant="permanent"
-      >
+        variant="permanent">
         <Toolbar>
           <Typography component="div" noWrap variant="h6">
-            Jesus Jimenez
+            {displayName}
           </Typography>
         </Toolbar>
 
         <Divider />
 
         <List>
-          {["Inbox", "Starred", "Send email", "Drafts"].map((text) => (
-            <ListItem disablePadding key={text}>
-              <ListItemButton>
-                <ListItemIcon>
-                  <TurnedInNot />
-                </ListItemIcon>
-              </ListItemButton>
-              <Grid container>
-                <ListItemText primary={text} />
-                <ListItemText secondary="Lorem ipsum dolor sit amet, consectetur adipisicing elit." />
-              </Grid>
-            </ListItem>
+          {notes.map((note) => (
+            <SidebarItem key={note.id} {...note} />
           ))}
         </List>
       </Drawer>

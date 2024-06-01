@@ -1,5 +1,5 @@
-import { Grid, Typography } from "@mui/material";
-import type { ReactElement, ReactNode } from "react";
+import { Grid, Typography } from '@mui/material';
+import type { ReactElement, ReactNode } from 'react';
 
 interface AuthLayoutProps {
   children: ReactNode;
@@ -8,7 +8,7 @@ interface AuthLayoutProps {
 
 export const AuthLayout = ({
   children,
-  title = "",
+  title = '',
 }: AuthLayoutProps): ReactElement => (
   <Grid
     alignItems="center"
@@ -17,22 +17,20 @@ export const AuthLayout = ({
     justifyContent="center"
     spacing={0}
     sx={{
-      minHeight: "100vh",
-      backgroundColor: "primary.main",
+      backgroundColor: 'primary.main',
+      minHeight: '100vh',
       pr: 4,
-    }}
-  >
+    }}>
     <Grid
       className="box-shadow"
       item
       sx={{
-        width: { md: 450 },
-        backgroundColor: "white",
-        padding: 3,
+        backgroundColor: 'white',
         borderRadius: 2,
+        padding: 3,
+        width: { md: 450 },
       }}
-      xs={3}
-    >
+      xs={3}>
       <Typography sx={{ mb: 1 }} variant="h5">
         {title}
       </Typography>

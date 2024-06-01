@@ -1,7 +1,7 @@
-import { Box, Toolbar } from "@mui/material";
-import type { ReactElement, ReactNode } from "react";
+import { Box, Toolbar } from '@mui/material';
+import type { ReactElement, ReactNode } from 'react';
 
-import { Navbar, Sidebar } from "../components";
+import { Navbar, Sidebar } from '../components';
 
 const drawerWidth = 240;
 
@@ -10,7 +10,9 @@ export const JournalLayout = ({
 }: {
   children: ReactNode;
 }): ReactElement => (
-  <Box sx={{ display: "flex" }}>
+  <Box
+    className="animate__animated animate__fadeIn animate__faster"
+    sx={{ display: 'flex' }}>
     <Navbar drawerWidth={drawerWidth} />
 
     <Sidebar drawerWidth={drawerWidth} />

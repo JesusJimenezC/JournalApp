@@ -1,11 +1,11 @@
-import type { ReactElement } from "react";
-import { Navigate, Route, Routes } from "react-router-dom";
+import type { ReactElement } from 'react';
+import { Navigate, Route, Routes } from 'react-router-dom';
 
-import { JournalPage } from "../pages/JournalPage.tsx";
+import { JournalPage } from '../pages/JournalPage.tsx';
 
 /* eslint-disable react-perf/jsx-no-jsx-as-prop */
 export const JournalRoutes = (): ReactElement => {
-  console.log("JournalRoutes");
+  console.log('JournalRoutes');
 
   return (
     <Routes>

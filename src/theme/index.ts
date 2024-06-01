@@ -1,2 +1,2 @@
-export * from "./AppTheme.tsx";
-export * from "./purpleTheme.ts";
+export * from './AppTheme.tsx';
+export * from './purpleTheme.ts';
