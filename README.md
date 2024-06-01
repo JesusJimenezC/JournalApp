@@ -57,4 +57,4 @@ This project is licensed under the MIT License. For more details, see the [LICEN
 
 Your Name - [jesus.jimenezc.mx@gmail.com](mailto:jesus.jimenezc.mx@gmail.com)
 
-Project Link: [JournalApp - Demo](https://journalapp-demo.vercel.app)
+Project Link: [JournalApp - Demo](https://journal-pwjlottb1-jesusjimenezcs-projects.vercel.app/)
