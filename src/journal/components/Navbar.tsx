@@ -13,7 +13,6 @@ export const Navbar = ({
   const dispatch = useAppDispatch();
 
   const onLogout = (): void => {
-    console.log('logout');
     dispatch(startLogout());
   };
 

@@ -7,7 +7,7 @@ import { Button, Grid, IconButton, TextField, Typography } from '@mui/material';
 import type { ChangeEvent, ReactElement } from 'react';
 import { useEffect, useMemo, useRef } from 'react';
 import { useForm, useWatch } from 'react-hook-form';
-import Swal from 'sweetalert2';
+import swal from 'sweetalert2';
 
 import { useAppDispatch, useAppSelector } from '../../store';
 import type { Note } from '../../store/journal';
@@ -55,7 +55,7 @@ export const NoteView = (): ReactElement => {
 
   useEffect(() => {
     if (savedMessage) {
-      Swal.fire({
+      swal.fire({
         icon: 'success',
         text: savedMessage,
         title: 'Saved!',
