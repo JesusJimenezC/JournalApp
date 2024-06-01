@@ -2,15 +2,16 @@
 
 ## Description
 
-JournalApp is a web application designed for users to keep track of their daily activities and thoughts. The application is built using TypeScript as the main language, Bun as the JavaScript runtime, React Hook Form for form management, Firebase for the database, and ESLint to maintain a consistent code standard.
+JournalApp is a web application designed to allow users to keep a personal journal. The application is built using TypeScript as the primary language and Bun as the JavaScript runtime. Key technologies and libraries used in this project include React-Hook-Form for form management, Firebase for the database, Redux Toolkit for state management, and ESLint for maintaining code standards.
 
 ## Features
 
-- **TypeScript**: Utilizes static typing to enhance code quality and development experience.
-- **Bun**: A fast JavaScript runtime that improves performance.
-- **React Hook Form**: Efficient and flexible form management.
+- **TypeScript**: Utilizing static typing to improve code quality and readability.
+- **Bun**: Using Bun as the JavaScript runtime for faster development and execution.
+- **React-Hook-Form**: Efficient form handling with minimal re-renders.
 - **Firebase**: Real-time database and authentication.
-- **ESLint**: Ensures a consistent and clean codebase.
+- **Redux Toolkit**: Simplified state management with Redux.
+- **ESLint**: Ensuring consistent and clean code standards.
 
 ## Installation
 
@@ -29,10 +30,10 @@ JournalApp is a web application designed for users to keep track of their daily 
     bun install
     ```
 
-4. Configure Firebase:
-    - Create a Firebase project at [Firebase Console](https://console.firebase.google.com/).
-    - Add a web app to your Firebase project.
-    - Copy your Firebase configuration and paste it into your project.
+4. Set up Firebase:
+    - Create a Firebase project in the [Firebase Console](https://console.firebase.google.com/).
+    - Set up Firestore and Authentication in your Firebase project.
+    - Add your Firebase configuration to the project.
 
 5. Start the application:
     ```bash
@@ -44,9 +45,9 @@ The application will be available at `http://localhost:5173`.
 ## Usage
 
 1. Open the application in your browser.
-2. Sign up or log in using Firebase authentication.
-3. Create, edit, and delete journal entries using the form powered by React Hook Form.
-4. Your entries will be stored and synced in real-time with Firebase.
+2. Register or log in using the Firebase authentication.
+3. Start creating, editing, and deleting journal entries.
+4. Explore the features of form handling with React-Hook-Form and state management with Redux Toolkit.
 
 ## License
 
