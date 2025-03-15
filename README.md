@@ -55,6 +55,6 @@ This project is licensed under the MIT License. For more details, see the [LICEN
 
 ## Contact
 
-Your Name - [jesus.jimenezc.mx@gmail.com](mailto:jesus.jimenezc.mx@gmail.com)
+Jesus Jimenez Cordero - [jesus.jimenez.mx@proton.me](mailto:jesus.jimenez.mx@proton.me)
 
-Project Link: [JournalApp - Demo](https://jourapp.vercel.app/)
+Project link: [JournalApp - Demo](https://jourapp.vercel.app/)
